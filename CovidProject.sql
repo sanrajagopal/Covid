@@ -1,3 +1,4 @@
+-- creating covid death tables 
 DROP TABLE IF EXISTS coviddeaths;
 
 CREATE TABLE coviddeaths (
@@ -43,7 +44,7 @@ CREATE TABLE coviddeaths (
     life_expectancy                     NUMERIC,
     human_development_index             NUMERIC
 );
-
+-- creating covid vaccination tables
 DROP TABLE IF EXISTS covidvaccinations;
 
 CREATE TABLE covidvaccinations (
@@ -84,7 +85,7 @@ CREATE TABLE covidvaccinations (
     life_expectancy                         NUMERIC,
     human_development_index                NUMERIC
 );
-
+-- exploring data
 Select * 
 From coviddeaths
 order by 1,2;
